@@ -1,0 +1,50 @@
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px 20px;
+  height: 25px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.like {
+  font-size: 20px;
+  transition: all 0.4s;
+}
+
+.comment {
+  font-size: 20px;
+  transition: all 0.4s;
+}
+
+.share {
+  font-size: 20px;
+  transition: all 0.4s;
+}
+
+.hide {
+  font-size: 20px;
+  transition: all 0.4s;
+}
+
+.like:hover {
+  color: #f7d932;
+  transition: all 0.4s;
+}
+
+.comment:hover {
+  color: rgb(129, 129, 129);
+  transition: all 0.4s;
+}
+
+.share:hover {
+  color: rgb(123, 169, 255);
+  transition: all 0.4s;
+}
+
+.hide:hover {
+  color: gray;
+  transition: all 0.4s;
+}

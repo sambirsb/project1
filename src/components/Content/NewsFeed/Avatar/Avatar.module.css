@@ -1,0 +1,9 @@
+.avatar {
+  height: min-content;
+}
+
+.avatar > img {
+  border-radius: 100%;
+  object-fit: cover;
+}
+

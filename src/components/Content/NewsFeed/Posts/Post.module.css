@@ -1,0 +1,29 @@
+
+.post {
+    width: 800px;
+    padding: 30px;
+    border-bottom: 1px solid #000;
+    background-color: #000;
+    margin-top: 25px;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.text {
+    padding-left: 60px;
+    font-size: 15px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    color: #fff;
+}
+
+.name {
+    display: flex;
+    color: #fff;
+}

@@ -1,0 +1,18 @@
+
+.dialogs_container {
+    padding: 0 25px;
+    height: 775px;
+}
+
+.dialogs {
+    width: 400px;
+    height: 775px;
+    padding: 25px;
+    background-color: black;
+    border-radius: 50px;
+    overflow-y: auto;
+}
+
+.dialogs::-webkit-scrollbar {
+    width: 0;
+}

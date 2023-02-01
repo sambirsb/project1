@@ -1,0 +1,13 @@
+.direct {
+    display: flex;
+}
+
+.span {
+    display: block;
+    width: 950px;
+    color: white;
+    font-size: 35px;
+    font-family: 'Bayon', sans-serif;
+    text-align: center;
+    padding-top: 3px;
+}

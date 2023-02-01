@@ -1,0 +1,53 @@
+.message_input {
+    display: flex;
+    justify-content: end;
+}
+
+.message_input>input {
+    width: 700px;
+    background-color: #000;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
+.message_input>button {
+    background-color: #f7d932;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    margin-left: 25px;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.message_input_error>input {
+    width: 700px;
+    background-color: #000;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid red;
+}
+
+.message_input_error>button {
+    background-color: #f7d932;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    margin-left: 25px;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.message_input_error {
+    display: flex;
+    justify-content: end;
+}

@@ -1,0 +1,6 @@
+.profile > a {
+    color: inherit;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 50px;
+}

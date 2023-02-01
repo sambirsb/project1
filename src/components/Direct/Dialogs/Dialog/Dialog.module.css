@@ -1,0 +1,32 @@
+.dialog {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 30px;
+    background-color: #565656;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    transition: all 0.3s;
+}
+
+.dialog:last-child {
+   margin: 0;
+}
+
+.dialog:hover {
+    background-color: rgb(100, 100, 100);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.name {
+    width: 60%;
+    display: flex;
+    justify-content: left;
+}
+
+.name > span {
+    color: white;
+    font-size: 20px;
+    line-height: 230%;
+}

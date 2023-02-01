@@ -1,0 +1,63 @@
+.user_div {
+    padding: 0 20px;
+}
+
+.user {
+    padding: 20px 20px 0 20px ;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.user_div:hover {
+    background-color: rgb(194, 194, 194);
+}
+
+.user_top {
+    display: flex;
+    width: 20%;
+}
+
+.avatar {
+    width: 10%;
+}
+
+.name {
+    padding: 14px 20px 0;
+    font-size: 15px;
+}
+
+.desription {
+    width: 50%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.user_info {
+    width: min-content;
+    padding-right: 20px;
+    
+}
+
+.user_info > span {
+    width: 100%;
+    white-space: nowrap;
+    float: right;
+}
+
+.user_info > button {
+    width: 100px;
+    border-radius: 50px;
+    background-color: rgb(62, 235, 128);
+    cursor: pointer;
+    float: right;
+}
+
+.user_info > button:hover {
+    width: 100px;
+    border-radius: 50px;
+    background-color: rgb(46, 180, 98);
+}
+

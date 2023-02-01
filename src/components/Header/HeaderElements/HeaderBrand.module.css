@@ -1,0 +1,13 @@
+.brand > a {
+    margin: 0 auto;
+    padding-top: 10px;
+    cursor: pointer;
+    font-size: 60px;
+    font-family: 'Lovers Quarrel', cursive;
+    color: #f7d932;
+}
+
+.brand {
+    width: 20%;
+    padding-top: 15px;
+}

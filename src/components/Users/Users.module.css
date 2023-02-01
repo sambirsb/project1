@@ -1,0 +1,120 @@
+.main {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    color: white;
+}
+
+
+.user_div {
+    width: 21%;
+    background-color: #000;
+    text-align: center;
+    border-radius: 50px;
+    height: 250px;
+    margin-bottom: 25px;
+    padding: 30px 50px 0;
+    transition: all 0.4s ease;
+    border: none;
+    border: #000 0.5px solid;
+}
+
+.user_div:hover {
+    transition: all 0.4s ease;
+    background-color: rgba(0, 0, 0, 0);   
+    border: #f7d932 0.5px solid;
+}
+
+.img_container {
+    height: min-content;
+    width: min-content;
+}
+
+.name_div {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-top: 25px;
+}
+
+.name {
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.btn_con {
+    color: #000;
+    border-radius: 100px;
+    width: 100px;
+    height: 35px;
+    margin: 20px auto 0;
+}
+
+.btn_con > object > a {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.follow {
+    background-color: #f7d932;
+    transition: 0.3s all ease;
+}
+
+.unfollow {
+    background-color: #ec7717;
+    transition: 0.3s all ease;
+}
+
+.follow:hover {
+    background-color: #c0a926;
+    transition: 0.3s all ease;
+}
+
+.unfollow:hover {
+    background-color: #c96513;
+    transition: 0.3s all ease;
+}
+
+.user_info > span {
+    width: 100%;
+    white-space: nowrap;
+    float: right;
+}
+
+.pagination {
+    height: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.page_span {
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.page_span_hidden {
+    display: none;
+}
+
+.selected_page_span {
+    font-weight: 500;
+    color:#000;
+    background-color:#f7d932;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+

@@ -1,0 +1,22 @@
+.all_container {
+    width: 950px;
+    height: 800px;
+    padding: 0 25px;
+}
+
+.messages_container {
+    background-color: #000;
+    border-radius: 50px;
+    padding: 0 25px ;
+    height: 775px;
+}
+
+.messages {
+    height: 700px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.messages::-webkit-scrollbar {
+    width: 0;
+}
