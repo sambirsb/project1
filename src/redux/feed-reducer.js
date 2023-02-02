@@ -3,7 +3,7 @@ let ADD_POST = 'ADD-POST'
 let initialState = {
     PostsData: [
         { id: 0, user: 'Elon Musk', text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ratione ipsam dicta quidem blanditiis, repudiandae tempora corporis quasi sunt. Accusantium natus illum dolores assumenda fugiat rerum dicta id repellat eveniet.' },
-        { id: 1, user: 'Elon Musk', text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ratione ipsam dicta quidem blanditiis, repudiandae tempora corporis quasi sunt. Accusantium natus illum dolores assumenda fugiat rerum dicta id repellat eveniet.' },
+        { id: 1, user: 'Elon Musk', text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ratione ipsam dicta quidem blanditiis, repudiandae tempora corporis.' },
     ],
 }
 

@@ -7,7 +7,8 @@ import { faFacebook, faGithub, faInstagram, faTwitter, faYoutube } from "@fortaw
 const Contacts = (props) => {
     return (
         <div className={c.contacts}>
-            {props.user.contacts.instagram ? <a target="_blank" href={props.user.contacts.instagram} className={`${c.contact_container} ${c.instagram}`}>
+            {props.user.contacts.instagram ?
+             <a target="_blank" href={props.user.contacts.instagram} className={`${c.contact_container} ${c.instagram}`}>
                 <FontAwesomeIcon className={c.contact_logo} icon={faInstagram} />
                 <div className={c.contact_text}>
                     Instagram

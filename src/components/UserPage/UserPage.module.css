@@ -84,16 +84,12 @@
 }
 
 .contact_container {
-    padding: 5px;
+    padding: 3px 5px;
     display: flex;
     flex-wrap: nowrap;
     max-width: 200px;
     overflow: hidden;
     transition: all 0.4s ease;
-}
-
-.contact_container:first-child {
-    padding-top: 0;
 }
 
 .contact_logo {

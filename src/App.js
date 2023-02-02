@@ -10,6 +10,7 @@ import { authMe } from './redux/auth-reducer';
 import React, { Suspense, useEffect } from 'react';
 import Preloader from './components/Preloader/Preloader';
 import Footer from './components/Footer/Footer';
+import Error404 from './components/404/Error404';
 
 const Login = React.lazy(() => import('./components/Login/Login'))
 
@@ -31,7 +32,7 @@ const App = React.memo((props) => {
               <Route path='/direct/*' element={<Direct />} />
               <Route path='/users/' element={<UsersContainer />} />
               <Route path='/profile/:userId' element={<UserPageContainer />} />
-              <Route path='/404' element={<div>4040404040404</div>} />
+              <Route path='/404' element={<Error404/>} />
               <Route path='/*' element={<Navigate to={'/404'}/>}/>
 
             </Routes>

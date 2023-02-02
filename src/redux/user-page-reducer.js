@@ -154,9 +154,10 @@ export const getStatus = (userId) => async (dispatch) => {
 export const setStatus = (status) => async (dispatch) => {
 
     dispatch(setIsLoading(true))
-    await profileApi.setStatus(status)
+    let response = await profileApi.setStatus(status)
     dispatch(setStatusData(status))
     dispatch(setIsLoading(false))
+    return response
 
 }
 

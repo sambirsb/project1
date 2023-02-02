@@ -13,6 +13,7 @@ let EditForm = React.memo((props) => {
     return <Formik initialValues={{
         FullName:props.user.fullName,
         AboutMe:props.user.aboutMe,
+        Status:props.status,
         LookingForAJobDescription:props.user.lookingForAJobDescription,
         LookingForAJob: props.user.lookingForAJob,
         contacts: {
@@ -25,13 +26,19 @@ let EditForm = React.memo((props) => {
         }
     }}
     onSubmit={async (values) => {
-        let response = await props.onUpdateProfile(values)
-        if(response === 0) {
+        let [response1, response2] = await props.onUpdateProfile(values)
+        if(response1 === 0 && response2 === 0) {
             setHaveServerError(false)
         }
         else {
-            setHaveServerError(true)
-            setServerError(response)
+            if(response1 === 0) {
+                setHaveServerError(true)
+                setServerError(response2)
+            }
+            else {
+                setHaveServerError(true)
+                setServerError(response1)
+            }
         }
     }}>
         <Form className={c.form}>
@@ -57,6 +64,9 @@ let EditForm = React.memo((props) => {
                 </div>
                 <div>
                     <Field type={"text"} name={'AboutMe'} placeholder={props.user.aboutMe} />
+                </div>
+                <div>
+                    <Field type={"text"} name={'Status'} placeholder={props.status ? props.status : 'Set status'} />
                 </div>
                 <div>
                     <Field type={"text"} name={'LookingForAJobDescription'} placeholder={'Your skills'} />

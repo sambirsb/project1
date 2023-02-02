@@ -27,20 +27,9 @@ let UserPageContainer = React.memo((props) => {
         setStatus(statusText)
     }
 
-    let onSetStatus = () => {
-        if (statusText.length <= 4) {
-            alert('Статус повивен бути більшим за 5 символів')
-        }
-        else if (statusText.length >= 300) {
-            alert('Статус повивен бути меншим за 300 символів')
-        }
-        else {
-            props.setStatus(statusText)
-        }
-    }
-
-    let onUpdateProfile = async (FormData) => {
-        let response = props.updateProfile(FormData)
+    let onUpdateProfile = async ({FullName, AboutMe, Status, LookingForAJobDescription, LookingForAJob, contacts}) => {
+        let response = await props.updateProfile({FullName, AboutMe, LookingForAJobDescription, LookingForAJob, contacts})
+        props.setStatus(Status)
         offEdit()
         return response
     }
@@ -73,7 +62,6 @@ let UserPageContainer = React.memo((props) => {
                 isYourProfile={isYourProfile}
                 status={props.status}
                 updateStatusText={updateStatusText}
-                onSetStatus={onSetStatus}
                 statusText={statusText}
                 isLoading={props.isLoading}
                 follow={props.follow}

@@ -20,7 +20,7 @@ let NewPostForm = (props) => {
             })
         }}>
         {({errors, touched}) => (
-            <Form>
+            <Form className={c.form}>
             <div className={errors.NewPost && touched.NewPost ? c.inp_error : c.inp}>
                 <Field type={'text'} name={'NewPost'} placeholder={'Type something...'} />
             </div>
