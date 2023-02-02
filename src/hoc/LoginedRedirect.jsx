@@ -12,7 +12,7 @@ let mapStateToProps = (state) => {
 export const LoginedRedirect = (Component) => {
     let RedirectComponent = (props) => {
         if(props.isLogined) {
-            return <Navigate to={'/userProfile/myprofile'}/>
+            return <Navigate to={'/profile/myprofile'}/>
         }
         return <Component {...props}/>
     }
